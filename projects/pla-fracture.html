@@ -10,12 +10,17 @@
 
   <header class="site-header">
     <div class="wrap">
-      <div class="name">Oliver Shapiro</div>
-      <nav class="site-nav">
-        <a href="../index.html">Projects</a>
-        <a href="../hextronics.html">Hextronics Internship</a>
-        <a href="mailto:olivershapiro@gmail.com">Contact</a>
-      </nav>
+      <div class="header-top">
+        <div class="name">Oliver Shapiro<span class="tagline">Mechanical Engineer</span></div>
+        <nav class="site-nav">
+          <a href="../index.html">Home</a>
+        </nav>
+      </div>
+      <div class="header-links">
+        <a class="btn" href="mailto:olivershapiro@gmail.com">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/olivershapiro1/" target="_blank">LinkedIn</a>
+        <a class="btn" href="../assets/docs/resume.pdf" target="_blank">Resume</a>
+      </div>
     </div>
   </header>
 
@@ -24,57 +29,47 @@
     <a class="back-link" href="../index.html">&larr; Back to all projects</a>
 
     <h1>Fracture Energy Analysis of 3D Printed PLA</h1>
-    <p class="subtitle">How well does 3D-printed PLA actually hold up as a structural material?</p>
+    <p class="subtitle">Investigation for materials science course</p>
 
-    <div class="meta-row">
-      <span><strong>Timeline:</strong> March 2024 – May 2024</span>
-      <span><strong>Course:</strong> ENGS 24, Materials Science, Dartmouth</span>
-      <span><strong>Tools:</strong> Charpy impact tester, Scanning Electron Microscope</span>
-    </div>
-
-    <ul class="tag-list">
-      <li>Materials Science</li>
-      <li>Testing</li>
-      <li>SEM</li>
-    </ul>
+    
 
     <h2>Overview</h2>
     <p>
-      A materials science capstone investigating whether 3D-printed PLA is a viable structural
-      material, and specifically how it fails. PLA parts are everywhere in prototyping, but
-      their fracture behavior — especially the ductile-to-brittle transition across temperature
-      — isn't always well understood by the people printing them.
+      A project investigating the material properties of 3D-printed PLA. PLA parts are everywhere in FDM prototyping since it is very easy to print with,
+       but
+      PLA's fracture behavior — especially the ductile-to-brittle transition across temperature
+      — was not well studied or understood. We sought to investigate this to gain a better understanding of the limitations of PLA in functional prototyping.
     </p>
 
     <h2>Approach</h2>
     <p>
       I used ASTM-standard Charpy impact testing to measure fracture energy and characterize the
       ductile-brittle transition of PLA across a range of temperatures. To understand why the
-      material failed the way it did, I used Scanning Electron Microscopy to image the fracture
-      surfaces and identify the failure mode at each condition.
+      material failed the way it did, our group used Scanning Electron Microscopy to image the fracture
+      surfaces and characterize fractures as ductile or brittle at each temperature.
     </p>
 
     <h2>Gallery</h2>
     <div class="gallery">
       <figure>
         <img src="../assets/img/pla-fracture/testing.jpeg" alt="Charpy impact testing setup">
-        <figcaption>Charpy impact testing setup.</figcaption>
+        <figcaption>ASTM Charpy impact testing setup</figcaption>
       </figure>
       <figure>
-        <img src="../assets/img/pla-fracture/sem.png" alt="SEM images of PLA fracture surface">
-        <figcaption>SEM imaging at the PLA fracture site.</figcaption>
+        <img class="img-shrink" src="../assets/img/pla-fracture/sem.png" alt="SEM images of PLA fracture surface">
+        <figcaption>SEM imaging of a 3D print at a fracture site</figcaption>
       </figure>
     </div>
 
     <h2>Results</h2>
     <p>
-      The testing mapped how PLA's fracture energy and failure mode shift with temperature,
-      showing a clear ductile-brittle transition and distinct fracture surface signatures at
-      each regime under SEM.
+      The testing mapped how PLA's fracture energy and failure mode shifted with temperature,
+      showing a clear ductile-brittle transition and distinct fracture surface differences at
+      each regime.
     </p>
-    <p>
-      <a href="../assets/img/pla-fracture/report.pdf">Full project report (PDF)</a>
-    </p>
+    <h2>Final Project Report</h2>
+    <iframe class="pdf-embed" src="../assets/img/pla-fracture/report.pdf" title="PLA Fracture Energy Analysis project report"></iframe>
+    <p><a href="../assets/img/pla-fracture/report.pdf">Open the report in a new tab</a></p>
 
   </main>
 

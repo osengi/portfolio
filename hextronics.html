@@ -10,12 +10,17 @@
 
   <header class="site-header">
     <div class="wrap">
-      <div class="name">Oliver Shapiro</div>
-      <nav class="site-nav">
-        <a href="index.html">Projects</a>
-        <a href="hextronics.html">Hextronics Internship</a>
-        <a href="mailto:olivershapiro@gmail.com">Contact</a>
-      </nav>
+      <div class="header-top">
+        <div class="name">Oliver Shapiro<span class="tagline">Mechanical Engineer</span></div>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+        </nav>
+      </div>
+      <div class="header-links">
+        <a class="btn" href="mailto:olivershapiro@gmail.com">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/olivershapiro1/" target="_blank">LinkedIn</a>
+        <a class="btn" href="assets/docs/resume.pdf" target="_blank">Resume</a>
+      </div>
     </div>
   </header>
 
@@ -26,130 +31,129 @@
     <h1>Hextronics Internship</h1>
     <p class="subtitle">Mechanical Engineering Intern — Summer 2026</p>
 
-    <div class="meta-row">
-      <span><strong>Company:</strong> Hextronics, Inc., Miami, FL</span>
-      <span><strong>Timeline:</strong> June 2026 – September 2026</span>
-      <span><strong>Tools:</strong> SOLIDWORKS, industrial 3D printers, CNC machining</span>
-    </div>
-
-    <ul class="tag-list">
-      <li>Internship</li>
-      <li>Drones</li>
-      <li>Prototyping</li>
-      <li>Electromechanical Design</li>
-      <li>DFM</li>
-    </ul>
-
-    <h2>Overview</h2>
-    <p>
-      Hextronics is a 20-person, Series-A startup building autonomous "drone-in-a-box"
-      infrastructure — think a weatherproof charging/docking station that lets an inspection
-      drone launch, fly a route, and land itself with no one on site. I spent the summer as
-      the mechanical engineering intern, which on a team that small meant I got to touch almost
-      every physical part of the product: fabrication, finishing, fixturing, and a couple of
-      systems I designed start to finish. Below are the three pieces of work I'm most proud of.
-    </p>
+    
+    
     <div class="gallery">
       <figure>
+        <img src="assets/img/hextronics/team-launch.jpg" alt="Oliver Shapiro with the Hextronics team at the product launch">
+        <figcaption>With the Hextronics engineering team at our product launch at CUAV 2026</figcaption>
+      </figure>
+      <figure>
         <img src="assets/img/hextronics/flying-drone.jpeg" alt="Hextronics inspection drone in flight">
-        <figcaption>The inspection drone the docking station serves, in flight.</figcaption>
+        <figcaption>Prototype drone in flight</figcaption>
       </figure>
     </div>
+
+    <p>
+      Hextronics is a small Series-A startup building autonomous "drone-in-a-box"
+      systems: infrastructure that enables industrial inspection drones to launch, fly a route, and land themselves with no one on site. I spent the summer as
+      Hextronics' mechanical engineering intern, which on a team that small meant I got to touch almost
+      every physical part of our product: fabrication, product painting/finishing, and a couple of
+      systems I designed ground-up. The summer culminated with launching our product at Commercial UAV (CUAV) Expo 2026 in Las Vegas. 
+      Below are three projects I led at Hextronics that I was particularly excited about!
+    </p>
 
     <h2>Drone Arm Lighting System</h2>
     <p>
-      Industrial inspection drones flying at night or in low visibility need to be seen, so I
-      designed the lighting system mounted on the drone's arms to meet the FAA's 3-mile
-      visibility requirement. That meant balancing optical output against weight, power draw,
-      and survivability — the lights live on a fast-spinning, vibrating part of the aircraft,
-      so the housing and mounting had to hold up to that abuse without adding meaningful mass
-      to the airframe. I designed a snap-fit lens housing around a custom lens/PCB assembly so
-      it could be reworked in the field without tools.
+      Industrial inspection drones flying at night or in low visibility need to see and be seen. I was tasked with designing 
+      the positional lighting system for the drone's arms. Working with our electrical engineering department,
+      I specced and designed a simple PCB with three high-powered, programmable LEDs mounted on it. These LEDs were chosen to meet
+      visibility requirements that were informed by federal policy.
+      I designed the board in tandem with a snap-fit lens. I designed this lens to snugly hold the PCB in place against a surface on the drone arm without requiring the use of adhesives or more fasteners.
+      I used beam-deflection calculations to ensure that the geometry of the snap doesn't require the plastic to exceed its allowable strain limit during installation.
+    </p>
+    <div class="gallery gallery-sm">
+      <figure>
+        <img src="assets/img/hextronics/lens-pcb.png" alt="Snap-fit lens and PCB assembly close-up">
+        <figcaption>Snap-fit lens housing the LED PCB</figcaption>
+      </figure>
+    </div>
+    <p>
+      I then took existing drone arm geometry and hollowed out space for the LED assembly as well as intentional, organized cable routing. I took care to
+      maintain a stiff arm geometry given that the arm's stiffness is critical for vibration mitigation and flight performance.
     </p>
     <div class="gallery">
       <figure>
+        <img src="assets/img/hextronics/arm-cad.png" alt="CAD of the drone arm lighting assembly">
+        <figcaption>CAD of the drone arm lighting assembly</figcaption>
+      </figure>
+      <figure>
         <img src="assets/img/hextronics/full-arm.png" alt="Full drone arm with lighting assembly">
-        <figcaption>Full arm assembly with lighting.</figcaption>
+        <figcaption>Close-up of the arm</figcaption>
       </figure>
       <figure>
         <img src="assets/img/hextronics/arm-no-cap.png" alt="Drone arm lighting internals, cap removed">
-        <figcaption>Internals, snap-fit cap removed.</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/img/hextronics/lens-pcb.png" alt="Lens and PCB assembly">
-        <figcaption>Lens and PCB assembly.</figcaption>
+        <figcaption>The drone arm, with the LED, lens, and cap gone</figcaption>
       </figure>
       <figure>
         <img src="assets/img/hextronics/snap-fit.png" alt="Snap-fit lens housing demonstrated">
-        <figcaption>Snap-fit housing, demonstrated open.</figcaption>
+        <figcaption>Snap-hooks grab the drone arm cap and stay in place unless manually removed</figcaption>
       </figure>
       <figure>
         <img src="assets/img/hextronics/arm-wires.jpeg" alt="Drone arm with wiring">
-        <figcaption>Arm wiring before final assembly.</figcaption>
+        <figcaption>Arm wiring before installing the LED and cap</figcaption>
       </figure>
       <figure>
         <img src="assets/img/hextronics/arm-installed.jpeg" alt="Lighting arm installed on the drone">
-        <figcaption>Installed on the aircraft.</figcaption>
+        <figcaption>Our drone arm, with MJF nylon structural pieces and an SLA lens (although the lenses will eventually be injection molded)</figcaption>
       </figure>
     </div>
 
     <h2>Drone Docking Station Fabrication</h2>
     <p>
       I led fabrication of the drone docking station prototypes for the product's public
-      debut, printing the enclosures on industrial 3D printers. Since these were the units
-      that would actually be shown to customers and investors, print quality alone wasn't
-      good enough — I finished them using automotive painting techniques (filling, sanding,
-      priming, and clear-coating) to get a surface finish that looked like an injection-molded
-      production part instead of a prototype. I also worked with our suppliers on the
-      production intent parts, applying DFM principles for injection molding and CNC
-      machining once we moved past the prototype stage.
+      debut, printing the enclosures on an industrial, 1x1x1 meter print volume 3D printer. I led the process of tuning, troubleshooting, and operating the 
+      printer. Since these were the units
+      that would actually be shown to customers and investors at CUAV, high FDM print quality in raw ASA alone wasn't
+      good enough. I finished them using automotive painting techniques (filling, sanding,
+      priming, painting, and clear-coating) to get a surface finish that looked like an injection-molded or thermoformed
+      production part instead of a prototype. 
     </p>
     <div class="gallery">
       <figure>
         <img src="assets/img/hextronics/fab-printer.jpeg" alt="Industrial 3D printer running an enclosure part">
-        <figcaption>Industrial 3D printer running an enclosure part.</figcaption>
+        <figcaption>Industrial 3D printer I operated to fabricate dock prototypes</figcaption>
       </figure>
       <figure>
         <img src="assets/img/hextronics/fab-process.jpeg" alt="Automotive-style finishing process on a printed part">
-        <figcaption>Filling, sanding, and priming — automotive finishing process.</figcaption>
+        <figcaption>The "pants" of the drone box on the 3D printer after a successful print </figcaption>
       </figure>
       <figure>
-        <img src="assets/img/hextronics/fab-me-and-ricky.jpeg" alt="Working in the shop on the docking station">
-        <figcaption>In the shop finishing a docking station prototype.</figcaption>
+        <img class="img-pop" src="assets/img/hextronics/fab-me-and-ricky.jpeg" alt="Working in the shop on the docking station">
+        <figcaption>In the paint shop with my friend and colleague Ricardo sanding a prototype </figcaption>
+      </figure>
+      <figure class="gallery-full">
+        <img src="assets/img/hextronics/fab-complete-dock-cuav.jpg" alt="Completed docking station at CUAV">
+        <figcaption>Our product looking pretty at the Hextronics booth at CUAV</figcaption>
       </figure>
     </div>
 
     <h2>Weather Station</h2>
     <p>
-      Since the docking station operates unattended outdoors, it needs to know the local
-      weather before deciding it's safe to fly. I designed a weather station built around a
-      Hall-effect anemometer for wind speed and a humidity sensor, both feeding live readings
-      into the flight management system so it can make go/no-go decisions automatically.
+      Since our system is designed to operate unattended outdoors, it needs wind and precipitation data prior to flight to make sure it is safe to fly. I designed a weather station built around a
+      custom-built Hall-effect anemometer for wind speed, a humidity sensor for precipitation data, and a camera. These systems feed live readings
+      into the flight management system so it can make flight decisions autonomously.
     </p>
     <div class="gallery">
       <figure>
         <img src="assets/img/hextronics/weather-anemometer.png" alt="Hall-effect anemometer design">
-        <figcaption>Hall-effect anemometer design.</figcaption>
+        <figcaption>Hex-themed anemometer</figcaption>
       </figure>
       <figure>
-        <img src="assets/img/hextronics/weather-anemometer-real.jpeg" alt="Built anemometer">
-        <figcaption>Built anemometer.</figcaption>
+        <img src="assets/img/hextronics/weather-anemometer-real.jpeg" alt="The anemometer in real life (made with MJF) with its TPU sealing cap in white">
+        <figcaption>The anemometer made in MJF</figcaption>
       </figure>
       <figure>
         <img src="assets/img/hextronics/weather-humidity.png" alt="Humidity sensor integration">
-        <figcaption>Humidity sensor integration.</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/img/hextronics/weather-camera.png" alt="Weather station camera module">
-        <figcaption>Camera module on the weather station.</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/img/hextronics/weather-anemometer-installed.jpeg" alt="Anemometer installed on the weather station">
-        <figcaption>Anemometer installed.</figcaption>
+        <figcaption>Integrated humidity sensor on the assembly</figcaption>
       </figure>
       <figure>
         <img src="assets/img/hextronics/weather-on-roof.png" alt="Weather station mounted on rooftop for testing">
-        <figcaption>Mounted on the roof for live testing.</figcaption>
+        <figcaption>CAD Render of the anemometer on the dock</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/hextronics/weather-anemometer-installed.jpeg" alt="Anemometer installed on the weather station">
+        <figcaption>Anemometer installed on a roof prototype</figcaption>
       </figure>
     </div>
 
