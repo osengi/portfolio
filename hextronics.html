@@ -46,21 +46,20 @@
 
     <p>
       Hextronics is a small Series-A startup building autonomous "drone-in-a-box"
-      systems: infrastructure that enables industrial inspection drones to launch, fly a route, and land themselves with no one on site. I spent the summer as
-      Hextronics' mechanical engineering intern, which on a team that small meant I got to touch almost
+      systems: infrastructure that enables industrial inspection drones to launch, fly a route, and land themselves with no one on-site. I spent the summer as
+      Hextronics' mechanical engineering intern, and given the lean team, I got to touch almost
       every physical part of our product: fabrication, product painting/finishing, and a couple of
-      systems I designed ground-up. The summer culminated with launching our product at Commercial UAV (CUAV) Expo 2026 in Las Vegas. 
-      Below are three projects I led at Hextronics that I was particularly excited about!
+      systems that I designed ground-up. The summer culminated with a public product launch at Commercial UAV (CUAV) Expo 2026 in Las Vegas. 
+      Below are three examples of projects that I led at Hextronics.
     </p>
 
     <h2>Drone Arm Lighting System</h2>
     <p>
       Industrial inspection drones flying at night or in low visibility need to see and be seen. I was tasked with designing 
       the positional lighting system for the drone's arms. Working with our electrical engineering department,
-      I specced and designed a simple PCB with three high-powered, programmable LEDs mounted on it. These LEDs were chosen to meet
-      visibility requirements that were informed by federal policy.
-      I designed the board in tandem with a snap-fit lens. I designed this lens to snugly hold the PCB in place against a surface on the drone arm without requiring the use of adhesives or more fasteners.
-      I used beam-deflection calculations to ensure that the geometry of the snap doesn't require the plastic to exceed its allowable strain limit during installation.
+      I specced and designed a simple PCB with three high-powered, programmable LEDs mounted on it. We chose the LEDs by reference to federal and international visibility requirements.
+      I designed the board to work in combination with a snap-fit lens that I designed to hold the PCB snugly in place against a surface on the drone arm without the need for adhesives or additional fasteners.
+      I used beam-deflection calculations to ensure that the geometry of the snap doesn't push the plastic beyond its allowable strain limit during installation.
     </p>
     <div class="gallery gallery-sm">
       <figure>
@@ -69,7 +68,7 @@
       </figure>
     </div>
     <p>
-      I then took existing drone arm geometry and hollowed out space for the LED assembly as well as intentional, organized cable routing. I took care to
+      I then took the existing drone arm geometry and hollowed out space for the LED assembly as well as intentional, organized cable routing. I took care to
       maintain a stiff arm geometry given that the arm's stiffness is critical for vibration mitigation and flight performance.
     </p>
     <div class="gallery">
@@ -83,7 +82,7 @@
       </figure>
       <figure>
         <img src="assets/img/hextronics/arm-no-cap.png" alt="Drone arm lighting internals, cap removed">
-        <figcaption>The drone arm, with the LED, lens, and cap gone</figcaption>
+        <figcaption>The drone arm, with the LED, lens, and cap removed</figcaption>
       </figure>
       <figure>
         <img src="assets/img/hextronics/snap-fit.png" alt="Snap-fit lens housing demonstrated">
@@ -95,24 +94,24 @@
       </figure>
       <figure>
         <img src="assets/img/hextronics/arm-installed.jpeg" alt="Lighting arm installed on the drone">
-        <figcaption>Our drone arm, with MJF nylon structural pieces and an SLA lens (although the lenses will eventually be injection molded)</figcaption>
+        <figcaption>Our drone arm, with MJF nylon structural pieces and an SLA lens (in the final planned product, the lenses will be injection molded)</figcaption>
       </figure>
     </div>
 
     <h2>Drone Docking Station Fabrication</h2>
     <p>
       I led fabrication of the drone docking station prototypes for the product's public
-      debut, printing the enclosures on an industrial, 1x1x1 meter print volume 3D printer. I led the process of tuning, troubleshooting, and operating the 
-      printer. Since these were the units
-      that would actually be shown to customers and investors at CUAV, high FDM print quality in raw ASA alone wasn't
-      good enough. I finished them using automotive painting techniques (filling, sanding,
+      debut, printing the enclosures on an industrial, 1x1x1 meter print volume 3D printer. I owned the process of tuning, troubleshooting, and operating the 
+      printer. Since I was fabricating the actual units
+      that we would show customers and investors at CUAV, I was not satisfied with the results of high FDM print quality in ASA alone.
+      I finished the units using automotive painting techniques (filling, sanding,
       priming, painting, and clear-coating) to get a surface finish that looked like an injection-molded or thermoformed
       production part instead of a prototype. 
     </p>
     <div class="gallery">
       <figure>
         <img src="assets/img/hextronics/fab-printer.jpeg" alt="Industrial 3D printer running an enclosure part">
-        <figcaption>Industrial 3D printer I operated to fabricate dock prototypes</figcaption>
+        <figcaption>Industrial 3D printer that I operated to fabricate dock prototypes</figcaption>
       </figure>
       <figure>
         <img src="assets/img/hextronics/fab-process.jpeg" alt="Automotive-style finishing process on a printed part">
@@ -130,8 +129,8 @@
 
     <h2>Weather Station</h2>
     <p>
-      Since our system is designed to operate unattended outdoors, it needs wind and precipitation data prior to flight to make sure it is safe to fly. I designed a weather station built around a
-      custom-built Hall-effect anemometer for wind speed, a humidity sensor for precipitation data, and a camera. These systems feed live readings
+      Since our system is designed to operate unattended outdoors, it needs wind and precipitation data prior to flight to ensure safe flying conditions. I designed a weather station built around a
+      custom-built Hall-effect anemometer for wind speed, a humidity sensor for precipitation data, and a camera for optional real-time human remote monitoring. These systems feed live readings
       into the flight management system so it can make flight decisions autonomously.
     </p>
     <div class="gallery">
